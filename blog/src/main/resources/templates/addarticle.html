@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Auto height - Editor.md examples</title>
+    <link rel="stylesheet" type="text/css" href="/editormd/examples/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/editormd/css/editormd.css" />
+    <link rel="stylesheet" href="/layui/css/layui.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <!--<link rel="shortcut icon" href="https://pandao.github.io/editor.md/favicon.ico" type="image/x-icon" />-->
+</head>
+<body>
+<div id="layout">
+    <header>
+        <h1>添加文章</h1>
+    </header>
+
+    <div class="btns">
+
+<!--<option th:each="category,iterStat: ${categories}" th:text="${category.name}"></option>-->
+
+
+        <input type="text" id="title" required  lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+
+
+        <select id ="category" >
+
+            <option th:each="catrgory,iterStat:${categories}" th:value="${catrgory.categoryid}" th:text="${catrgory.name}"></option>
+
+            <!--<option th:each="category,iterStat: ${categories}" th:value="${category.category}" th:text="${category.name}"></option>-->
+            <!--<option>2</option>-->
+            <!--<option>3</option>-->
+        </select>
+
+        <button type="button" class="layui-btn" id="test1">
+            <i class="layui-icon">&#xe67c;</i>上传封面
+        </button>
+
+
+
+
+        <button id="append-btn">提交</button>
+
+
+    </div>
+
+
+
+    <div id="test-editormd">
+                <textarea style="display:none;">
+</textarea>
+    </div>
+</div>
+<script src="/editormd/examples/js/jquery.min.js"></script>
+<script src="/editormd/editormd.js"></script>
+<script src="/layui/layui.js"></script>
+<script>
+
+    var imagepath="/img/moren.jpg";
+
+    layui.use('upload', function(){
+
+
+
+
+        var upload = layui.upload;
+
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#test1' //绑定元素
+            ,url: '/upload/articleimage' //上传接口
+            ,data:{
+                "imagepath":imagepath
+            },done: function(res){
+                //上传完毕回调
+                imagepath = res["imagepath"];
+
+            }
+            ,error: function(){
+                //请求异常回调
+                alert("上传失败");
+            }
+        });
+    });
+</script>
+
+
+<script type="text/javascript">
+    var testEditor;
+
+    $(function() {
+        testEditor = editormd("test-editormd", {
+            width           : "90%",
+            autoHeight      : true,
+            path            : "/editormd/lib/",
+            htmlDecode      : "style,script,iframe",
+            tex             : true,
+            emoji           : true,
+            taskList        : true,
+            flowChart       : true,
+            sequenceDiagram : true
+        });
+
+        $("#append-btn").click(function(){
+
+
+            var title = $("#title").val();  //获取标题
+            var category = $("#category").val();        //获取类别
+            var content = $(".markdown-body").html();   //获取内容富文本
+
+            var time = new Date();                      //获取时间
+            time=time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate() + ' ' + time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
+
+
+
+            //获取摘要
+            var article_abstract = content.split("<p>");
+            for(var i = 0 ;i<article_abstract.length;i++){
+                var string = article_abstract[i];
+                //break;
+            }
+            var abstract = string.split("<");
+            var article_abstract=abstract[0];
+
+            //alert(article_abstract);
+            //获取封面路径
+            //alert(imagepath);
+
+
+            //提交数据
+
+            $.ajax({
+                type:"POST",
+                cache:false,
+                url:"/articlegl/add",
+                data:{
+                    "title":title,
+                    "category":category,
+                    "article_abstract":article_abstract,
+                    "content":content,
+                    "time":time,
+                    "imagepath":imagepath
+                },
+                async:true,
+                success:function(data){
+                    //展示相应的数据
+                    console.log(data);
+                    //[[${articleSize}]]=[[${articleSize}]];
+                    //ko.applyBindings(viewModel);
+
+                    //alert([[${articleSize}]]);
+                }
+            });
+
+
+
+
+            // $.get("./test.md", function(md){
+            //     testEditor.appendMarkdown(md);
+            // });
+
+
+        });
+    });
+</script>
+</body>
+</html>

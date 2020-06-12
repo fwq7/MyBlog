@@ -1,0 +1,463 @@
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO Thread-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO Thread-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+INFO Thread-37 com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO Thread-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-2 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-2 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-7 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-8 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-3 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-4 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-4 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-3 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-2 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-6 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO Thread-14 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+INFO http-nio-8080-exec-7 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-3 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-6 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-3 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-8 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-4 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO Thread-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+INFO http-nio-8080-exec-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-7 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO Thread-9 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-3} inited
+INFO Thread-14 com.alibaba.druid.pool.DruidDataSource - {dataSource-3} closed
+INFO http-nio-8080-exec-3 com.alibaba.druid.pool.DruidDataSource - {dataSource-4} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-8 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-8 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-4 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-2 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-3 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-6 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-8 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO main com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO SpringContextShutdownHook com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-2 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO Thread-5 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+INFO http-nio-8080-exec-10 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-2 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-4 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+WARN http-nio-8080-exec-1 com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker - Cannot resolve com.mysq.jdbc.Connection.ping method.  Will use 'SELECT 1' instead.
+java.lang.NullPointerException
+	at com.alibaba.druid.pool.vendor.MySqlValidConnectionChecker.<init>(MySqlValidConnectionChecker.java:48)
+	at com.alibaba.druid.pool.DruidDataSource.initValidConnectionChecker(DruidDataSource.java:878)
+	at com.alibaba.druid.pool.DruidDataSource.init(DruidDataSource.java:594)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:915)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:911)
+	at com.alibaba.druid.pool.DruidDataSource.getConnection(DruidDataSource.java:98)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:158)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:116)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:79)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:80)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:67)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.prepareStatement(MybatisSimpleExecutor.java:93)
+	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doQuery(MybatisSimpleExecutor.java:66)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426)
+	at com.sun.proxy.$Proxy67.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:223)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.executeForMany(MybatisMapperMethod.java:158)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:76)
+	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:61)
+	at com.sun.proxy.$Proxy70.selectBycategory(Unknown Source)
+	at com.fwq.blog.service.imp.ArticleServiceImpl.selectBycategory(ArticleServiceImpl.java:37)
+	at com.fwq.blog.service.imp.ArticleServiceImpl$$FastClassBySpringCGLIB$$20c84bab.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687)
+	at com.fwq.blog.service.imp.ArticleServiceImpl$$EnhancerBySpringCGLIB$$2e1e3d10.selectBycategory(<generated>)
+	at com.fwq.blog.controller.IndexController.index(IndexController.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.base/java.lang.Thread.run(Thread.java:835)
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR Druid-ConnectionPool-Create-1657935624 com.alibaba.druid.pool.DruidDataSource - create connection error
+java.sql.SQLException: validateConnection false
+	at com.alibaba.druid.pool.DruidAbstractDataSource.validateConnection(DruidAbstractDataSource.java:1216)
+	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1439)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:1844)
+ERROR http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+ERROR http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+ERROR http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+ERROR http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+ERROR http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+ERROR http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - testWhileIdle is true, validationQuery not set
+INFO http-nio-8080-exec-1 com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

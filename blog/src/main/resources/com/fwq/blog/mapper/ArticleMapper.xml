@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fwq.blog.mapper.ArticleMapper">
+
+    <resultMap type="com.fwq.blog.entity.Article" id="ArticleBean">
+        <id column="id" property="id" />
+
+        <result column="title" property="title" />
+        <result column="article_abstract" property="articleAbstract" />
+        <result column="content" property="content" />
+        <result column="time" property="time" />
+        <result column="image" property="image" />
+        <!-- 一对多的关系 -->
+        <!-- property: 指的是集合属性的值, ofType：指的是集合中元素的类型 -->
+        <collection property="category" ofType="com.fwq.blog.entity.Category">
+            <id column="categoryid" property="categoryid" />
+            <result column="name" property="name" />
+        </collection>
+
+
+    </resultMap>
+
+    <select id="selectAll" resultMap="ArticleBean">
+        select
+          article.id,category.name,article.title,article.article_abstract,article.content,article.time,article.image,category.categoryid
+        from
+          article
+        INNER join
+          category
+        on
+          article.category=category.categoryid
+    </select>
+
+    <select id="selectBycategory" resultMap="ArticleBean" parameterType="java.lang.Integer" >
+        select
+          article.id,category.name,article.title,article.article_abstract,article.content,article.time,article.image,category.categoryid
+        from
+          article
+        INNER join
+          category
+        on
+          article.category=category.categoryid
+        where article.category=#{category}
+    </select>
+
+    <select id="selectById" resultMap="ArticleBean" parameterType="java.lang.Integer">
+
+        SELECT article.*,category.* from article,category where article.id = #{articleid} and category.categoryid = #{categoryid}
+
+    </select>
+
+
+  <insert id="addarticle" parameterType="com.fwq.blog.entity.Article">
+
+      insert into article (id,category,title,article_abstract,content,article.time,image) values(null,#{category.categoryid},#{title},#{articleAbstract},#{content},#{time},#{image})
+
+      <selectKey keyProperty="id" order="AFTER" resultType="int">
+          select LAST_INSERT_ID()
+      </selectKey>
+  </insert>
+
+    <!--<select id="selectFz" resultMap="ArticleBean">-->
+        <!--select-->
+            <!--article.id,category.name,article.title,article.article_abstract,article.image-->
+        <!--from-->
+            <!--article-->
+        <!--INNER JOIN-->
+            <!--category-->
+        <!--on-->
+            <!--article.category=category.id-->
+    <!--</select>-->
+
+
+</mapper>

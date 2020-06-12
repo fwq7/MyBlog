@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Document</title>
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+<!--加载meta IE兼容文件-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+  <div class="header">
+    <div class="menu-btn">
+      <div class="menu"></div>
+    </div>
+    <h1 class="logo">
+      <a href="/index">
+        <span>MYBLOG</span>
+        <img src="/img/logo.png">
+      </a>
+    </h1>
+    <div class="nav">
+      <a href="/index">文章</a>
+      <!--<a href="/whisper">微语</a>-->
+      <a href="/leacots">留言</a>
+      <a href="/album">相册</a>
+      <a href="/about"  class="active">关于</a>
+      <a href="login">登录</a>
+      <a href="signup">注册</a>
+
+    </div>
+    <ul class="layui-nav header-down-nav">
+      <li class="layui-nav-item"><a href="/index" class="active">文章</a></li>
+      <!--<li class="layui-nav-item"><a href="whisper.html">微语</a></li>-->
+      <li class="layui-nav-item"><a href="/leacots">留言</a></li>
+      <li class="layui-nav-item"><a href="/album">相册</a></li>
+      <li class="layui-nav-item"><a href="/about"  class="active">关于</a></li>
+      <li class="layui-nav-item"><a href="/login">登录</a></li>
+      <li class="layui-nav-item"><a href="/signup">注册</a></li>
+    </ul>
+    <p class="welcome-text">
+      欢迎来到<span class="name">蔷薇繁</span>的博客~
+    </p>
+  </div>
+
+
+  <div class="content whisper-content leacots-content details-content">
+    <div class="cont w1000">
+      <div class="whisper-list">
+        <div class="item-box">
+          <div class="review-version">
+              <div class="form-box">
+                <div class="article-cont">
+                  <div class="title">
+                    <h3 th:text="${article.title}"></h3>
+
+
+                    <p class="cont-info"><span class="data" th:text="${article.time}"></span><span class="types" th:text="${article.category.name}"></span></p>
+                  </div>
+
+                  <img th:src="@{${article.image}}" >
+                  <div th:utext="${article.content}">
+                  </div>
+                </div>
+                <div class="form">
+
+                    <div class="layui-form-item layui-form-text">
+                      <div class="layui-input-block">
+                        <textarea name="desc" placeholder="既然来了，就说几句" class="layui-textarea"></textarea>
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                      <div class="layui-input-block" style="text-align: right;">
+                        <button class="layui-btn definite" onclick="commitleacots()">確定</button>
+                      </div>
+                    </div>
+
+                </div>
+              </div>
+              <div class="volume">
+                全部留言
+              </div>
+              <div class="list-cont" >
+
+                <div class="cont" th:each="comment,iterStat:${comments}">
+                  <div class="img">
+                    <img th:src="@{${comment.headImage}}" alt="">
+                  </div>
+                  <div class="text">
+                    <p class="tit"><span class="name" th:text="${comment.name}"></span><span class="data" th:text="${comment.commentTime}"></span></p>
+                    <p class="ct" th:text="${comment.content}"></p>
+                  </div>
+                </div>
+
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="demo" style="text-align: center;"></div>
+    </div>
+  </div>
+
+  <script>
+    function commitleacots() {
+        $.ajax({
+            type:"GET",
+            cache:false,
+            url:"http://localhost:8080/getsession",
+            async:false,
+            success:function(result){
+                if(result['user']==null){
+                    alert("请登录");
+
+                }
+                else{
+
+                    var leacots=$(".layui-textarea").val();
+                    if(leacots!=''){
+                        var time = new Date();                      //获取时间
+                        time=time.getFullYear() + '-' + (time.getMonth() + 1) + '-' + time.getDate() + ' ' + time.getHours() + ':' + time.getMinutes() + ':' + time.getSeconds();
+
+
+                        $.ajax({
+                            type:"POST",
+                            cache:false,
+
+                            url:"/details/commitleacots",
+                            data:{
+                                "article_id":[[${article.id}]],
+                                "user_id":result['user'].userid,
+                                "operation":2,
+                                "content":leacots,
+                                "commentTimetime":time,
+
+                            },
+                            async:false,
+                            success:function(result){
+                                //展示相应的数据
+                                //console.log(data);
+                                //[[${articleSize}]]=[[${articleSize}]];
+                                //ko.applyBindings(viewModel);
+
+                                //alert([[${articleSize}]]);
+                                $(".list-cont").prepend('<div class="cont"><div class="img"><img src="'+result['user'].headImage+'" alt=""></div><div class="text"><p class="tit"><span class="name"></span>'+result['user'].name+'<span class="data">'+result['comment'].commentTime+'</span></p><p class="ct">'+result['comment'].content+'</p></div></div>');
+
+
+
+                            }
+                        });
+                    }
+                }
+
+
+            }
+        });
+
+
+
+
+
+
+
+    }
+
+
+
+  </script>
+
+  <!--<script type="text/html" id="laytplCont">-->
+    <!--<div class="cont">-->
+      <!--<div class="img">-->
+        <!--{{#  if(d.avatar){ }}-->
+        <!--<img src="{{d.avatar}}" alt="">-->
+        <!--{{#  } else { }}-->
+        <!--<img  th:src="@{${session.user.headImage}==null?'':${session.user.headImage}}" alt="">-->
+        <!--{{# } }}-->
+      <!--</div>-->
+      <!--<div class="text">-->
+        <!--<p class="tit"><span class="name" th:text="${session.user.name}==null?'':${session.user.name}" ></span><span class="data" th:text="${#dates.format(new java.util.Date().getTime(), 'yyyy-MM-dd hh:mm:ss')}==null?'':${#dates.format(new java.util.Date().getTime(), 'yyyy-MM-dd hh:mm:ss')}" ></span></p>-->
+        <!--<p class="ct">{{d.cont}}</p>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</script>-->
+  <div class="footer-wrap">
+    <div class="footer w1000">
+      <div class="qrcode">
+        <img src="/img/erweima.jpg">
+      </div>
+      <div class="practice-mode">
+        <img src="/img/down_img.jpg">
+        <div class="text">
+          <h4 class="title">我的联系方式</h4>
+          <p>微信<span class="WeChat">13026119043</span></p>
+          <p>qq<span class="iphone">1430833756</span></p>
+          <p>邮箱<span class="email">1430833756@qq.com</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/layui/layui.js"></script>
+  <script type="text/javascript">
+
+
+    layui.config({
+      base: '/js/util/'
+    }).use(['element','laypage','form','menu'],function(){
+      element = layui.element,laypage = layui.laypage,form = layui.form,menu = layui.menu;
+      laypage.render({
+          elem: 'demo'
+          ,limit:5
+          ,count: [[${count}]] //数据总数，从服务端得到
+          ,jump: function(obj, first){
+              if(!first){
+                  $.ajax({
+                      type:'GET',
+                      datatype: "json",
+                      url:'/leacotspage?article_id='+[[${article.id}]]+"&page="+obj.curr,
+                      success:function(result){
+                          //返回成功进行响应操作
+                          //获取父亲div 清空
+                          $(".list-cont").empty()
+
+                          for (var key in result['comments']) {
+                              //更新数据
+                              $(".list-cont").append('<div class="cont"><div class="img"><img src="'+result['comments'][key].headImage+'" alt=""></div><div class="text"><p class="tit"><span class="name"></span>'+result['comments'][key].name+'<span class="data">'+result['comments'][key].commentTime+'</span></p><p class="ct">'+result['comments'][key].content+'</p></div></div>');
+                          }
+
+
+
+
+                      }
+                  });
+
+
+
+
+
+
+              }
+
+
+
+          }
+
+
+
+
+
+
+      });
+      menu.init();
+      menu.submit();
+    })
+  </script>
+</body>
+</html>

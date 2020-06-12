@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fwq.blog.mapper.PictureMapper">
+
+
+    <select id="selectAll" resultType="com.fwq.blog.entity.Picture">
+        select * from xc
+
+    </select>
+
+    <insert id="addPicture" parameterType="com.fwq.blog.entity.Picture">
+        insert into xc (id,title,address,createtime,image) values (null,#{title},#{address},#{createtime},#{image})
+
+
+
+        <selectKey keyProperty="id" order="AFTER" resultType="int">
+            select LAST_INSERT_ID()</selectKey>
+
+    </insert>
+
+</mapper>

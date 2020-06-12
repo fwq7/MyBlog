@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fwq.blog.mapper.CommentMapper">
+
+    <select id="selectByarticleid" parameterType="java.lang.Integer" resultType="com.fwq.blog.entity.CommentBean">
+        SELECT comment.*,user.name,user.headImage FROM `comment`,`user` where article_id=#{articleid} and comment.user_id=user.userid
+
+    </select>
+
+
+    <insert id="addComment" parameterType="com.fwq.blog.entity.Comment">
+        insert into comment (id,article_id,user_id,operation,content,commenttime) values (null,#{articleId},#{userId},#{operation},#{content},#{commentTime})
+
+
+
+        <selectKey keyProperty="id" order="AFTER" resultType="int">
+            select LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+
+
+</mapper>

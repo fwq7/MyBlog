@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="/layui/css/layui.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+
+    <!--加载meta IE兼容文件-->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+<body>
+<div class="header">
+    <div class="menu-btn">
+        <div class="menu"></div>
+    </div>
+    <h1 class="logo">
+        <a href="/index">
+            <span>MYBLOG</span>
+            <img src="/img/logo.png">
+        </a>
+    </h1>
+    <div class="nav">
+        <a href="index" class="active">文章</a>
+        <!--<a href="whisper">微语</a>-->
+        <a href="leacots">留言</a>
+        <a href="album">相册</a>
+        <a href="about">关于</a>
+        <a href="login">登录</a>
+        <a href="signup">注册</a>
+    </div>
+    <ul class="layui-nav header-down-nav">
+        <li class="layui-nav-item"><a href="/index" class="active">文章</a></li>
+        <!--<li class="layui-nav-item"><a href="whisper.html">微语</a></li>-->
+        <li class="layui-nav-item"><a href="/leacots">留言</a></li>
+        <li class="layui-nav-item"><a href="/album">相册</a></li>
+        <li class="layui-nav-item"><a href="/about">关于</a></li>
+        <li class="layui-nav-item"><a href="/login">登录</a></li>
+        <li class="layui-nav-item"><a href="/signup">注册</a></li>
+
+    </ul>
+    <p class="welcome-text">
+        欢迎来到<span class="name">蔷薇繁</span>的博客~
+    </p>
+
+</div>
+
+<div class="banner">
+    <div class="cont w1000">
+        <div class="title">
+            <h3>MY<br />BLOG</h3>
+            <h4>well-balanced heart</h4>
+        </div>
+        <div class="amount">
+            <p><span class="text">访问量</span><span class="access">1000</span></p>
+            <p><span class="text">日志</span><span class="daily-record">1000</span></p>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div class="cont w1000">
+        <div class="title">
+        <span class="layui-breadcrumb" lay-separator="|">
+          <a th:id="${category.categoryid}" th:href="@{/category?category=}+${category.categoryid}"  th:class="${(category.categoryid)} == ${category_id} ?'active':'d'"  th:each="category,iterStat : ${categorylist}" th:text="${category.name} "  ></a>
+
+          <!--<a href="javascript:;" class="active">设计文章</a>-->
+          <!--<a href="javascript:;" >前端文章</a>-->
+          <!--<a style="background-color: #00FF00" href="javascript:;" >旅游杂记</a>-->
+
+
+        </span>
+        </div>
+
+        <div id="list-item" class="list-item">
+
+            <div class="item" th:each="article,iterStat : ${articleLise}" >
+                <div class="layui-fluid" >
+                    <div class="layui-row">
+                        <div class="layui-col-xs12 layui-col-sm4 layui-col-md5">
+                            <div class="img"><img th:src="@{${article.image}}" alt=""></div>
+                        </div>
+                        <div class="layui-col-xs12 layui-col-sm8 layui-col-md7">
+                            <div class="item-cont">
+                                <h3 th:text="${article.title}"> <button class="layui-btn layui-btn-danger new-icon">new</button> </h3>
+                                <h5 th:text="${article.category.name}" ></h5>
+                                <p th:text="${article.articleAbstract}" > </p>
+                                <a th:href="@{/details(articleid=${article.id},category=${article.category.categoryid})}" class="go-icon"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="item">-->
+                <!--<div class="layui-fluid">-->
+                    <!--<div class="layui-row">-->
+                        <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md5">-->
+                            <!--<div class="img"><img src="/img/sy_img2.jpg" alt=""></div>-->
+                        <!--</div>-->
+                        <!--<div class="layui-col-xs12 layui-col-sm8 layui-col-md7">-->
+                            <!--<div class="item-cont">-->
+                                <!--<h3>空间立体效果图，完美呈现最终效果<button class="layui-btn layui-btn-danger new-icon">new</button></h3>-->
+                                <!--<h5>设计文章</h5>-->
+                                <!--<p>室内设计作为一门新兴的学科，尽管还只是近数十年的事，但是人们有意识地对自己生活、生产活动的室内进行安排布置，甚至美化装饰，赋予室内环境以所祈使的气氛，却早巳从人类文明伊始的时期就已存在</p>-->
+                                <!--<a href="/details" class="go-icon"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<div class="layui-fluid">-->
+                    <!--<div class="layui-row">-->
+                        <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md5">-->
+                            <!--<div class="img"><img src="/img/sy_img3.jpg" alt=""></div>-->
+                        <!--</div>-->
+                        <!--<div class="layui-col-xs12 layui-col-sm8 layui-col-md7">-->
+                            <!--<div class="item-cont">-->
+                                <!--<h3>空间立体效果图，完美呈现最终效果<button class="layui-btn layui-btn-danger new-icon">new</button></h3>-->
+                                <!--<h5>设计文章</h5>-->
+                                <!--<p>室内设计作为一门新兴的学科，尽管还只是近数十年的事，但是人们有意识地对自己生活、生产活动的室内进行安排布置，甚至美化装饰，赋予室内环境以所祈使的气氛，却早巳从人类文明伊始的时期就已存在</p>-->
+                                <!--<a href="/details" class="go-icon"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<div class="layui-fluid">-->
+                    <!--<div class="layui-row">-->
+                        <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md5">-->
+                            <!--<div class="img"><img src="/img/sy_img4.jpg" alt=""></div>-->
+                        <!--</div>-->
+                        <!--<div class="layui-col-xs12 layui-col-sm8 layui-col-md7">-->
+                            <!--<div class="item-cont">-->
+                                <!--<h3>空间立体效果图，完美呈现最终效果<button class="layui-btn layui-btn-danger new-icon">new</button></h3>-->
+                                <!--<h5>设计文章</h5>-->
+                                <!--<p>室内设计作为一门新兴的学科，尽管还只是近数十年的事，但是人们有意识地对自己生活、生产活动的室内进行安排布置，甚至美化装饰，赋予室内环境以所祈使的气氛，却早巳从人类文明伊始的时期就已存在</p>-->
+                                <!--<a href="/details" class="go-icon"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+            <!--<div class="item">-->
+                <!--<div class="layui-fluid">-->
+                    <!--<div class="layui-row">-->
+                        <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md5">-->
+                            <!--<div class="img"><img src="/img/sy_img5.jpg" alt=""></div>-->
+                        <!--</div>-->
+                        <!--<div class="layui-col-xs12 layui-col-sm8 layui-col-md7">-->
+                            <!--<div class="item-cont">-->
+                                <!--<h3>空间立体效果图，完美呈现最终效果<button class="layui-btn layui-btn-danger new-icon">new</button></h3>-->
+                                <!--<h5>设计文章</h5>-->
+                                <!--<p>室内设计作为一门新兴的学科，尽管还只是近数十年的事，但是人们有意识地对自己生活、生产活动的室内进行安排布置，甚至美化装饰，赋予室内环境以所祈使的气氛，却早巳从人类文明伊始的时期就已存在</p>-->
+                                <!--<a href="/details" class="go-icon"></a>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        </div>
+        <div id="demo" style="text-align: center;"></div>
+    </div>
+</div>
+
+<div class="footer-wrap">
+    <div class="footer w1000">
+        <div class="qrcode">
+            <img src="/img/erweima.jpg">
+        </div>
+        <div class="practice-mode">
+            <img src="/img/down_img.jpg">
+            <div class="text">
+                <h4 class="title">我的联系方式</h4>
+                <p>微信<span class="WeChat">13026119043</span></p>
+                <p>qq<span class="iphone">1430833756</span></p>
+                <p>邮箱<span class="email">1430833756@qq.com</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/layui/layui.js"></script>
+<script type="text/javascript">
+
+    var count = [[${articleSize}]];
+    layui.config({
+        base: '/js/util/'
+    }).use(['element','laypage','jquery','menu'],function(){
+        element = layui.element,laypage = layui.laypage,$ = layui.$,menu = layui.menu;
+        laypage.render({
+            elem: 'demo'
+            ,count: count //数据总数，从服务端得到
+            ,limit:5
+            ,jump: function(obj, first){
+                //obj包含了当前分页的所有参数，比如：
+                //console.log(obj.curr); //得到当前页，以便向服务端请求对应页的数据。
+                //首次不执行
+                if(!first){
+                    //do something
+                    // alert(obj.curr);
+                    // alert([[${category_id}]]);
+                    // alert("http://localhost:8080/page?category="+[[${category_id}]]+"&page="+obj.curr);
+
+
+                    $.ajax({
+                        type:'GET',
+                        datatype: "json",
+                        url:'/page?category='+[[${category_id}]]+"&page="+obj.curr,
+                        success:function(result){
+                            //返回成功进行响应操作
+                            //获取父亲div 清空
+                            $("#list-item").empty();
+                            for (var key in result['articles']) {
+                                //更新数据
+
+                                $("#list-item").append("<div class='item'><div class='layui-fluid'><div class='layui-row'><div class='layui-col-xs12 layui-col-sm4 layui-col-md5'><div class='img'><img src='"+result['articles'][key].image+"' alt=''></div></div><div class='layui-col-xs12 layui-col-sm8 layui-col-md7'><div class='item-cont'><h3>"+result['articles'][key].title+"<button class='layui-btn layui-btn-danger new-icon'>new</button></h3><h5>"+result['articles'][key].category.name+"</h5><p>"+result['articles'][key].articleAbstract+"</p><a href="+"/details?articleid="+result['articles'][key].id+"&category="+result['articles'][key].category.categoryid+" class='go-icon'></a></div></div></div></div></div>");
+
+                            }
+
+
+                        }
+                    });
+
+                }
+            }
+
+        });
+
+        menu.init();
+    });
+
+    function ajax(category)
+    {
+        $.ajax({
+            type:"POST",
+            cache:false,
+            url:"/category",
+            data:{
+                "category":category,
+            },
+            async:true,
+            success:function(data){
+                //展示相应的数据
+                console.log(data);
+                //[[${articleSize}]]=[[${articleSize}]];
+                //ko.applyBindings(viewModel);
+
+                alert([[${articleSize}]]);
+            }
+        });
+    }
+
+
+
+    // function f(id) {
+    //
+    //     //其他a 标签的class 不激活
+    //     // console.log(document.getElementById(id).parentElement.childElementCount);
+    //     var count = document.getElementById(id).parentElement.childElementCount;
+    //
+    //     for (var i = 1;i<=count;i++)
+    //     {
+    //         //其他a 标签的class 不激活
+    //         if(!(i%2==0)){
+    //             document.getElementById(id).parentElement.childNodes[i].className='d';
+    //         }
+    //     }
+    //
+    //     //改变样式 激活点击标签
+    //     var a = document.getElementById(id);
+    //     a.className="active";
+    //
+    //
+    //     //传递分类信息到后端
+    //     var catrgory =a.id;
+    //
+    //     //发送异步请求
+    //     ajax(catrgory);
+    //
+    //     //
+    //     //console.log(this);
+    //
+    // }
+
+
+    // function bkfn()
+    // {
+    //     alert("dad");
+    //
+    // }
+
+
+
+</script>
+</body>
+
+</html>

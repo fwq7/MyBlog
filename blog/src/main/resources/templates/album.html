@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+  <script type="text/javascript" src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<!--加载meta IE兼容文件-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <div class="header">
+    <div class="menu-btn">
+      <div class="menu"></div>
+    </div>
+    <h1 class="logo">
+      <a href="/index">
+        <span>MYBLOG</span>
+        <img src="/img/logo.png">
+      </a>
+    </h1>
+    <div class="nav">
+      <a href="/index">文章</a>
+      <!--<a href="/whisper">微语</a>-->
+      <a href="/leacots">留言</a>
+      <a href="/album"  class="active">相册</a>
+      <a href="/about">关于</a>
+      <a href="login">登录</a>
+      <a href="signup">注册</a>
+    </div>
+    <ul class="layui-nav header-down-nav">
+      <li class="layui-nav-item"><a href="/index">文章</a></li>
+      <!--<li class="layui-nav-item"><a href="whisper.html">微语</a></li>-->
+      <li class="layui-nav-item"><a href="/leacots">留言</a></li>
+      <li class="layui-nav-item"><a href="/album"  class="active">相册</a></li>
+      <li class="layui-nav-item"><a href="/about">关于</a></li>
+      <li class="layui-nav-item"><a href="/login">登录</a></li>
+      <li class="layui-nav-item"><a href="/signup">注册</a></li>
+    </ul>
+    <p class="welcome-text">
+      欢迎来到<span class="name">蔷薇繁</span>的博客~
+    </p>
+  </div>
+
+  <div class="album-content w1000 layer-photos-demo"  id="layer-photos-demo">
+
+    <div class="img-info">
+      <img src="/img/xc_img1.jpg" alt="">
+      <div class="title">
+        <p class="data">记录生活的一点一滴</p>
+
+      </div>
+    </div>
+
+
+    <div class="img-list">
+
+
+      <div class="layui-fluid" style="padding:0">
+        <div class="layui-row layui-col-space30 space" id="fdiv">
+
+          <div class="layui-col-xs12 layui-col-sm4 layui-col-md4" th:each="picture,iterStat:${pictures}">
+            <div class="item">
+              <img th:src="@{${picture.image}}">
+              <div class="cont-text">
+                <div class="data" th:text="${picture.createtime}"></div>
+                <p class="address"><i class="layui-icon layui-icon-location"></i><span th:text="${picture.address}"></span></p>
+                <p class="briefly" th:text="${picture.title}"></p>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img4.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img5.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img3.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img4.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img5.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img3.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img4.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+          <!--<div class="layui-col-xs12 layui-col-sm4 layui-col-md4">-->
+            <!--<div class="item">-->
+              <!--<img src="/img/xc_img4.jpg">-->
+              <!--<div class="cont-text">-->
+                <!--<div class="data">2018/08/08</div>-->
+                <!--<p class="address"><i class="layui-icon layui-icon-location"></i><span>江西九江</span></p>-->
+                <!--<p class="briefly">今日天气晴朗,庐山一日游</p>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</div>-->
+
+
+
+
+        </div>
+      </div>
+
+
+      <div id="demo"></div>
+
+    </div>
+  </div>
+
+
+  <div class="footer-wrap">
+    <div class="footer w1000">
+      <div class="qrcode">
+        <img src="/img/erweima.jpg">
+      </div>
+      <div class="practice-mode">
+        <img src="/img/down_img.jpg">
+        <div class="text">
+          <h4 class="title">我的联系方式</h4>
+          <p>微信<span class="WeChat">13026119043</span></p>
+          <p>qq<span class="iphone">1430833756</span></p>
+          <p>邮箱<span class="email">1430833756@qq.com</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/layui/layui.js"></script>
+  <script type="text/javascript">
+   layui.config({
+      base: '/js/util/'
+    }).use(['element','laypage','form','layer','menu'],function(){
+      element = layui.element,laypage = layui.laypage,form = layui.form,layer = layui.layer,menu = layui.menu;
+      laypage.render({
+        elem: 'demo'
+          ,limit:5
+          ,count: [[${count}]] //数据总数，从服务端得到
+          ,jump: function(obj, first){
+              if(!first){
+                  $.ajax({
+                      type:'GET',
+                      datatype: "json",
+                      url:'/picturepage?&page='+obj.curr,
+                      success:function(result){
+                          //返回成功进行响应操作
+                          //获取父亲div 清空
+                           $("#fdiv").empty()
+                          //
+                          for (var key in result['pictures']) {
+                              //更新数据
+                             //alert(result['pictures'][key].address);
+                              $("#fdiv").append('<div class="layui-col-xs12 layui-col-sm4 layui-col-md4"><div class="item"><img src="'+result['pictures'][key].image+'"><div class="cont-text"><div class="data">'+result['pictures'][key].createtime+'</div><p class="address"><i class="layui-icon layui-icon-location"></i><span>'+result['pictures'][key].address+'</span></p><p class="briefly">'+result['pictures'][key].title+'</p></div></div></div>');
+                          }
+
+
+
+
+                      }
+                  });
+
+
+
+
+
+
+              }
+
+
+
+          }
+
+
+      });
+      layer.photos({
+        photos: '#layer-photos-demo'
+        ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+        ,tab:function(pic,layero){
+          console.log(pic,layero)
+        }
+      });
+      menu.init();
+    })
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
